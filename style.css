@@ -1,26 +1,5 @@
 body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0rem 3rem;
-}
-
-.container{
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    min-width: 1000px;
-    min-height: 1000px;
-    
-}
-.container > div{
-    width: 50%;
-}
-.containerIMG{
-    background-image: url(/img/6.png);
-    background-size: 50%;
-    background-position-x:right;
-    background-position-y: center;
-    background-attachment:fixed ;
-    background-repeat: no-repeat;
+    font-family: 'Questrial', sans-serif;
 
 }
 .primerSection , .txt{
@@ -58,6 +37,7 @@ section .SobreNosotros{
     padding: .4rem .4rem;
     width: 10%;
     margin-bottom: 1rem;
+    border:1px solid #fff;
 }
 .btn:hover{
     background-color: #fff;
@@ -72,17 +52,105 @@ section .SobreNosotros{
     padding: .4rem .4rem;
     width: 10%;
     margin-bottom: 1rem;
+    border:1px solid rgb(4, 76, 172);
 }
 
 .btn-blanco:hover{
     background-color: rgb(42, 103, 188);
     color:#fff ;
     transition-duration: .7s;
+    border:1px solid rgb(4, 76, 172);
 
 }
+
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.navIMG{
+    background-image: url(/img/lema2.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 50%;
+
+}
+.espaciado{
+    width: 50%;
+}
+.conjuntoLinks{
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    text-align: end;
+    align-items: flex-end;
+    align-content: flex-end;
+    align-self: center;
+    height: 10%;
+}
+
+.conjuntoLinks a{
+    margin: 1rem;
+}
+.conjuntoLinks input{
+    width: 25%;
+    margin: 1rem;
+
+}
+
+li{
+    list-style:none;
+}
+
+.links{
+    text-decoration: none;
+    color: rgb(4, 76, 172);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    min-width: 1000px;
+    min-height: 700px;
+    margin-bottom: 2rem;
+}
+.container > div{
+    width: 50%;
+}
+.containerIMG{
+    background-image: url(/img/6.png);
+    background-size: 50%;
+    background-position-x:right;
+    background-position-y: center;
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+
+}
+
+.primerSection h2{
+    font-size: 4rem;
+    color: rgb(4, 76, 172);
+    font-weight:1400;
+    margin-bottom: .5rem;
+}
+.primerSection h3{
+    font-size: 2rem;
+    color: rgb(4, 76, 172);
+    margin-top: .5rem;
+}
+.primerSection h4{
+    font-size: 1rem;
+    color: rgb(4, 76, 172);
+    font-weight: 100;
+}
+
+
 .GLPA{
     text-align: center;
-
+    margin: 0rem;
     background-image:url(/img/GLPA-AUTO-EQUIPO.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -98,7 +166,7 @@ section .SobreNosotros{
 }
 .Primero-GLPA{
     position: relative;
-    background-color: #bbc;
+    background-color: #eef;
     opacity: 0.5;
     width: 50%;
     height: 1000px;
@@ -108,8 +176,156 @@ section .SobreNosotros{
     justify-content: center;
     flex-direction: column;
 }
+
+.Primero-GLPA::before{
+    position: relative;
+    background-color: #eef;
+    opacity: 1;
+    width: 50%;
+    height: 1000px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 .btn-blanco{
     background: transparent;
+    border:1px solid rgb(4, 76, 172);
+    margin-top: 1rem;
+    padding: .5rem;
+}
+
+.Nuestros-Seguros{
+
+}
+
+.Nuestros-seguros-presentacion{
+    text-align: center;
+
+}
+
+.Nuestros-seguros-presentacion h2{
+    font-size: 3rem;
+    color: rgb(4, 76, 172);    
+}
+
+.Nuestros-seguros-presentacion h3{
+    font-size: 1.5rem;
+    color: rgb(4, 76, 172);
+    font-weight: 100;    
+}
+
+.Nuestros-seguros-presentacion p{
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    width: 50%;
+    height: 100px;
+    color: rgb(4, 76, 172);
+
+}
+
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 10px;
+    grid-template-rows: repeat(4, 150px);
+    justify-content: center;
+}
+.galeria div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;    
+    font-size: 2rem;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: cover , contain;
+    background-position: center;
+    font-size: 1rem;
+}
+
+.galeria-titulo{
+    grid-column: 1 / 4;
+    grid-row: 1;
+    background-color: rgb(4, 76, 172);
+
+}
+.galeria-primero{
+    grid-column: 1 / 2;
+    grid-row: 2;
+    background-image: url(/img/2.png);
+    background-size: contain;
+    display: flex;
+}    
+.galeria-segundo{
+    grid-column: 2 / 3;
+    grid-row: 2;
+    background-image: url(/img/3.png);
+    background-size: contain;
+
+}
+.galeria-tercero{
+    grid-column: 3 / 4;
+    grid-row: 2;
+    background-image: url(/img/1.png);
+    background-size: contain;
+
+}
+.galeria-cuarto{
+    grid-column: 1 / 2;
+    grid-row: 3;
+    background-image: url(/img/5.png);
+    background-size: contain;
+
+}   
+.galeria-quinto{
+    grid-column: 2 / 3;
+    grid-row: 3;
+    background-image: url(/img/7.png);
+    background-size: contain;
+
+}
+.galeria-sexto{
+    grid-column: 3 / 4;
+    grid-row: 3;
+    background-image: url(/img/4.png);
+    background-size: contain;
+
+}
+.galeria-septimo{ 
+    grid-column: 1 / 2;
+    grid-row: 4;
+    background-image: url(/img/6.png);
+    background-size: contain;
+
+}
+
+.galeria-octavo{ 
+    grid-column: 2 / 3;
+    grid-row: 4;
+    background-image: url(/img/8.png);
+    background-size: contain;
+
+}
+.galeria-grid-texto{
+    background-color: rgb(215,215,215);
+    width: 100%;
+    padding: 1rem;
+    align-self:flex-end ;
+
+}
+
+.efecto-opacidad:hover{
+    opacity: .4;
+    transition-duration:.3s;
+    background-color: rgb(215,215,215);
+    
 }
 
 .imgSobreNosotros{
@@ -152,45 +368,4 @@ section .SobreNosotros{
 
 .trabajamosCon img{
     margin: 1rem;
-}
-.nav{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.navIMG{
-    background-image: url(/img/lema2.png);
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 200px;
-    width: 50%;
-
-}
-.espaciado{
-    width: 50%;
-}
-.conjuntoLinks{
-    width: 100%;
-    display: flex;
-    justify-content:first baseline ;
-    align-self: center;
-    height: 10%;
-}
-
-.conjuntoLinks a{
-    margin: 1rem;
-}
-.conjuntoLinks input{
-    width: 25%;
-    margin: 1rem;
-}
-
-li{
-    list-style:none;
-}
-
-.links{
-    text-decoration: none;
-    color: rgb(4, 76, 172);
 }
