@@ -369,3 +369,41 @@ li{
 .trabajamosCon img{
     margin: 1rem;
 }
+
+/* ----------------------------------------------------FORMULARIO-------------------------------------------------------------------------- */
+
+.formulario-contacto{
+    background-image: url(/img/8.png);
+    background-repeat: no-repeat;
+    background-size: cover,contain;
+    height: 700px;
+}
+
+.formulario-contacto div{
+    width: 50%;
+}
+
+.formulario-parte1{
+    background-color: rgb(4, 76, 172);
+    opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.txtBox{
+    width: 50%;
+    height: 2rem;
+    background-color: rgb(4, 76, 172);
+    margin: 1rem;
+    border: 1px solid #fff ;
+    color: #fff;
+}
+.txtBox::placeholder{
+    color: #fff;
+}
+
+
+.whatsapp{
+    text-decoration: none;
+}
