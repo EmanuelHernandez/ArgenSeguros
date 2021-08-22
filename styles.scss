@@ -10,6 +10,7 @@
 }
 
 body {
+    width: 100vw;
 }
 
 header {
@@ -45,7 +46,7 @@ header {
             }
         }
         .header-socialmedia {
-            padding-top: 48px;
+            padding-top: 3px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -59,13 +60,17 @@ header {
                 height: 100%;
                 max-height: 80px;
                 img{
-                    width: 50px;
+                    width: 30px;
+                    margin: 10px
                 }
                 .whatsapp-button {
                     @include button;
                     margin: 0 11px;
                 }
             }
+        }
+        .header-image{
+            padding: 15px 10px;
         }
     }
 }
