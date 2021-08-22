@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles.css">
 
     <title>Inicio | Argenseguros</title>
 </head>
@@ -23,23 +23,36 @@
 <body>
     <header>
         <div class="header-container">
-            <div class="header-image"></div>
-            <div class="header-socialmedia">
-                <i class="links fab fa-facebook-square"></i>
-                <a class="btn-blanco whatsapp" href="https://api.whatsapp.com/send?phone=3512017420" id="">Whatsapp</a>
+            <div id="menu-icon">
+                <span>&#9776;</span> 
+                <!-- this unidocde character, it should be changed, because probably dosn't work on Android, IOS -->
             </div>
-            <!-- <div class="header-spacer"></div> -->
-            <div id="menu-icon"></div>
-            <div class="container-links">
+            <div id="container-links">
                 <a class="link" href="#">Inicio</a>
                 <a class="link" href="#">Seguro GLPA</a>
                 <a class="link" href="#">Cotizar</a>
                 <a class="link" href="#">Nosotros</a>
                 <a class="link" href="#">Empresas</a>
             </div>
+            <div class="header-socialmedia">
+                <div class=social-item>
+                    <img src="./img/LOGO.png" alt="">
+                </div>
+                <div class=social-item>
+                    <img src="./img/Facebook.webp" alt="">
+                </div>
+                <div class=social-item>
+                    <a class="whatsapp-button" href="https://api.whatsapp.com/send?phone=3512017420" id="">Whatsapp</a>
+                </div>
+            </div>
+            <div class="header-image">
+                <img src="./img/Titulo y lema .webp" alt="Argenseguros productor asesor de seguros">
+            </div>
+            
+            <!-- <div class="header-spacer"></div> -->
         </div>
     </header>
-    <article>
+    <!-- <article>
         <section>
             <div class="container">
                 <div class="primerSection txt">
@@ -159,7 +172,7 @@
 
 
     </article>
-
+ -->
 
 
     <footer></footer>

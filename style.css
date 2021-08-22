@@ -63,6 +63,10 @@ section .SobreNosotros{
 
 }
 
+.header-socialmedia{
+    width: 100vw;
+}
+
 .nav{
     display: flex;
     flex-wrap: nowrap;
