@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/style-formulario.css">
     
@@ -20,7 +23,6 @@
     <header>
         <div class="nav">
             <div class="navIMG">
-    
             </div>
             <div class="espaciado"></div>
             <div class="conjuntoLinks">
@@ -32,21 +34,34 @@
                 <a class="btn-blanco whatsapp" href="https://api.whatsapp.com/send?phone=3512017420">Whatsapp</a>
             </div>
         </div>
+        
             
     </header>
     <article>
-        <form action="" class="formulario-contacto">
-            <h2>Contacto</h2>
+
+        <form action="" name="submit-form" class="submit-form" >
             <div class="formulario-parte1">
-                <input class="txtBox" type="text" placeholder="Nombre" name="" id="">
-                <input class="txtBox" type="text" placeholder="Telefono : EJ:3512017420 / 1120119332 " name="" id="">
-                <input class="txtBox" type="text" placeholder="Email" name="" id="">
+
+                <div class="titulo">
+                    <h2>Póngase en contacto</h2>
+                </div>
+
+                <input  autocomplete="off" class="txtBox" type="text" placeholder="Nombre" name="nombres" id="">
+                <input  autocomplete="off" class="txtBox" type="text" placeholder="Telefono : EJ:3512017420 / 1120119332 " name="apellidos" id="">
+                <input  autocomplete="off" class="txtBox" type="email" placeholder="Email" name="email" id="">
+                <input  autocomplete="off" class="txtBox" type="email" placeholder="Email" name="otro" id="">
+                
                 <select name="transporte" class="txtBox">
                     <option>Atencion al cliente</option>
                     <option>Cotizacion</option>
                     <option>Quiero trabajar en ArgenSeguros</option>
                     <option>Otros</option>
                 </select>
+                
+                <div>
+                    <input type="text-area" class="text-area" placeholder="Escribe tu mensaje aquí...">
+                </div>  
+                
                 <select name="transporte" class="txtBox lista">
                     <option>Buenos Aires</option>
                     <option>Tucuman</option>
@@ -73,9 +88,13 @@
                     <option>Jujuy</option>
                     <option>Jujuy</option>
                 </select>
-            <input class="btn-blanco" type="submit" placeholder="Email" name="" id="">
-
+                
+                <div>
+                    <a class="btn-blanco" type="submit" href="contacto.html" value="Obtener cotizacion"><span>Contactanos</span></a>
+                </div>
+            
             </div>
+            
             <div class="formulario-parte2">
 
             </div>
@@ -84,5 +103,7 @@
     <footer>
 
     </footer>
+    <script src="app.js"></script>
+
 </body>
 </html>
