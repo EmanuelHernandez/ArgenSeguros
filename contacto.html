@@ -46,25 +46,24 @@
                     <h2>Póngase en contacto</h2>
                 </div>
 
-                <input  autocomplete="off" class="txtBox" type="text" placeholder="Nombre" name="nombres" id="">
-                <input  autocomplete="off" class="txtBox" type="text" placeholder="Telefono : EJ:3512017420 / 1120119332 " name="apellidos" id="">
-                <input  autocomplete="off" class="txtBox" type="email" placeholder="Email" name="email" id="">
-                <input  autocomplete="off" class="txtBox" type="email" placeholder="Email" name="otro" id="">
+                <input  autocomplete="off" class="txtBox" type="text" placeholder="Nombre" name="Nombre" id="">
+                <input  autocomplete="off" class="txtBox" type="text" placeholder="Telefono : EJ:3512017420 / 1120119332 " name="Telefono" id="">
+                <input  autocomplete="off" class="txtBox" type="email" placeholder="Email" name="Email" id="">
                 
-                <select name="transporte" class="txtBox">
-                    <option>Atencion al cliente</option>
+                <div class="contenedor_textArea">
+                    <textarea class="txtBox text-area" type="text" placeholder="Escribe tu mensaje aqui..." name="Cometario" id="" ></textarea>
+                </div>
+                <select autocomplete="off" class="lista_contacto txtBox" type="text" name="TipoDeMensaje" id="">
+                    <option >Atencion al cliente</option>
                     <option>Cotizacion</option>
                     <option>Quiero trabajar en ArgenSeguros</option>
                     <option>Otros</option>
                 </select>
                 
-                <div>
-                    <input type="text-area" class="text-area" placeholder="Escribe tu mensaje aquí...">
-                </div>  
-                
-                <select name="transporte" class="txtBox lista">
+
+                <select autocomplete="off" class=" lista_contacto txtBox" type="text" name="Provincia" id="">
                     <option>Buenos Aires</option>
-                    <option>Tucuman</option>
+                    <option>Tucuman</option> 
                     <option>Santa Fe</option>
                     <option>Cordoba</option>
                     <option>San Juan</option>
@@ -86,17 +85,15 @@
                     <option>Santa Cruz</option>
                     <option>Santiago del estero</option>
                     <option>Jujuy</option>
-                    <option>Jujuy</option>
                 </select>
                 
-                <div>
-                    <a class="btn-blanco" type="submit" href="contacto.html" value="Obtener cotizacion"><span>Contactanos</span></a>
+                <div class="envio">
+                    <button type="submit" class="btn">Contactanos</button>
                 </div>
             
             </div>
             
             <div class="formulario-parte2">
-
             </div>
         </form>
     </article>
@@ -104,6 +101,9 @@
 
     </footer>
     <script src="app.js"></script>
+
+
+
 
 </body>
 </html>

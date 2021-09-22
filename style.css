@@ -1,5 +1,6 @@
 body{
     font-family: 'Questrial', sans-serif;
+    margin: 2rem;
 
 }
 .primerSection , .txt{
@@ -20,7 +21,7 @@ body{
 }
 section .SobreNosotros{
     color: aliceblue;
-    background-color: rgb(42, 103, 188);
+    background-color: rgb(4, 76, 172);
 }
 .container-btn
 {
@@ -30,7 +31,7 @@ section .SobreNosotros{
     width: 100%;
 }
 .btn{
-    background-color: rgb(42, 103, 188);
+    background-color: rgb(4, 76, 172);
     border-color: #fff;
     color: #fff;
     text-align: center;
@@ -39,6 +40,7 @@ section .SobreNosotros{
     margin-bottom: 1rem;
     border:1px solid #fff;
     text-decoration: none;
+    border-radius: 0;
 }
 .btn:hover{
     background-color: #fff;
@@ -47,8 +49,8 @@ section .SobreNosotros{
 }
 .btn-blanco{
     background-color: #fff;
-    border-color: rgb(42, 103, 188);
-    color: rgb(42, 103, 188);
+    border-color: rgb(4, 76, 172);
+    color: rgb(4, 76, 172);
     text-align: center;
     padding: .4rem .4rem;
     width: 12%;
@@ -59,7 +61,7 @@ section .SobreNosotros{
 }
 
 .btn-blanco:hover{
-    background-color: rgb(42, 103, 188);
+    background-color: rgb(4, 76, 172);
     color:#fff ;
     transition-duration: .7s;
     border:1px solid rgb(4, 76, 172);
@@ -77,6 +79,7 @@ section .SobreNosotros{
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
+    margin-left: -1rem;
     width: 50%;
 
 }
@@ -84,6 +87,8 @@ section .SobreNosotros{
     width: 50%;
 }
 .conjuntoLinks{
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     display: flex;
     margin-left: auto;
@@ -188,7 +193,7 @@ li{
 
 .btn-blanco{
     background: transparent;
-    border:1px solid rgb(10, 50, 160);
+    border:1px solid rgb(4, 76, 172);
     margin-top: 1rem;
     padding: .5rem;
 }
@@ -351,10 +356,14 @@ li{
     opacity: 1;
 }
 
-.imgSobreNosotros img{
-    display: block !important;
-    max-height: 7%;
-    max-width: 90%;
+.imgSobreNosotros{
+    background-image: url(./img/6a09dadbfe8e4b2c844d14f0df73cb86.jpg);
+    min-width: 700px ;
+    min-height: 700px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    margin-top: 2rem;    
 }
 .empresas{
     text-align: center;
@@ -390,36 +399,43 @@ li{
     height: 700px;
 }
 
-.formulario-contacto div{
-    width: 50%;
+.submit-form{
+    position: relative;
+    display: flex;
+}
+.submit-form div{
+    width: 100%;
 }
 
 .formulario-parte1{
     background-color: rgb(4, 76, 172);
     opacity: 1;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
     text-align: center;
     align-items: center;
+    width: 50%;
+    padding-top: 1rem;
+    font-family: 'Questrial', sans-serif;
+    color: #fff;
+    font-weight: 200;
 }
 
 .formulario-parte1 .titulo{
     font-family: 'Questrial', sans-serif;
-    color: #fff;
-    font-weight: 200;
-
 
 }
 
 
 .txtBox{
+    padding: .4rem;
+    margin-top: 0.5rem;
+    font-family: 'Questrial', sans-serif;
     width: 50%;
-    height: 2rem;
+    height: 3rem;
     background-color: rgb(4, 76, 172);
     margin: 1rem;
     border: 1px solid #fff ;
     color: #fff;
+    font-size: 1rem;
 }
 .txtBox::placeholder{
     color: #fff;
@@ -427,19 +443,43 @@ li{
 
 .txtBox:focus { outline: none; } 
 
+.txtBox option{
+    color: #000;
+    background-color: #fff;
+}
+
 .text-area{
     width: 50%;
-    height: 100px;
+    font-family: 'Questrial', sans-serif;
     background-color: rgb(4, 76, 172);
     border: 1px solid #fff ;
+    color: #fff;
     resize: none;
+
 }
 .text-area::placeholder{
     color: #fff;
 }
 
+.text-area:focus { outline: none; } 
+
 .whatsapp{
     text-decoration: none;
+}
+.envio button{
+    font-family: 'Questrial', sans-serif;
+    margin-top: 1rem;
+    width: 20%;
+    font-size: 1rem;
+    height: 40px;
+}
+
+.formulario-parte2{
+    background-image: url(/img/imagenFrmContacto.png);
+    background-size: 100%;
+    background-position-x:top;
+    background-position-y:initial;
+    background-repeat: no-repeat;
 
 }
 
